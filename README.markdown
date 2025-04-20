@@ -107,8 +107,6 @@ The application provides a REST API for managing products. Key endpoints include
     curl "http://localhost:8059/api/products?sort=price,desc&category=electronics"
     ```
 
-Refer to the API documentation (e.g., OpenAPI/Swagger, if available) for more details.
-
 ## Stopping the Application
 
 1. **Stop the Spring Boot Application**: Press `Ctrl+C` in the terminal where `./mvnw spring-boot:run` is running.
@@ -191,8 +189,3 @@ Refer to the API documentation (e.g., OpenAPI/Swagger, if available) for more de
 
 - PostgreSQL data is persisted in a Docker volume (`pgdata`). To reset the database, remove the volume with `docker-compose down -v`.
 - The application runs on port `8059` by default. To change this, update `server.port` in `application.properties`.
-- For production, secure database credentials and enable HTTPS.
-
-## License
-
-This project is licensed under the MIT License.
